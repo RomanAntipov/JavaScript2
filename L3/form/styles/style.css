@@ -142,7 +142,6 @@ input[type="text"] {
     font-family: Verdana;
     font-style: italic;
     color: darkblue;
-    text-transform: capitalize;
 }
 
 /* Стиль для поля ввода сообщения */
@@ -153,7 +152,6 @@ textarea {
     font-family: Verdana;
     font-style: italic;
     color: darkblue;
-    text-transform: capitalize;
 }
 
 .footer {

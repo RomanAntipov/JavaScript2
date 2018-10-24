@@ -23,6 +23,7 @@ function validate(){
    			document.getElementById("nameForm").style.borderColor = "red";
    			document.getElementById("nameMess").innerHTML=" *поле заполнено неверно";
    		}
+   		return false;
 	};
 	//Если поле email пустое выведем сообщение и предотвратим отправку формы
 	console.log ('ei.length='+ei.length);
@@ -37,6 +38,7 @@ function validate(){
    			document.getElementById("emailForm").style.borderColor = "red";
    			document.getElementById("emailMess").innerHTML=" *поле заполнено неверно";
    		}
+   		return false;
    	};
    console.log ('pi.length='+pi.length);
    if (pi.length==0){
@@ -50,6 +52,7 @@ function validate(){
    			document.getElementById("phoneForm").style.borderColor = "red";
    			document.getElementById("numMess").innerHTML=" *поле заполнено неверно";
    		}
+   		return false;
    	};
 
 
