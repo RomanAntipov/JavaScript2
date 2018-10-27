@@ -1,0 +1,215 @@
+﻿/* Цвет шрифта и фона - общие */
+body {
+    background: #f8f8f8;
+    font-family: "Arial";
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 200px;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    margin: 10px;
+}
+/* убрать маркеты из списка в меню
+    сделать меню блочно-строчным */
+.menu {
+    list-style-type: none;
+    display: inline-flex;
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    }
+
+.menu ul {
+    display: flex;
+    align-items: right;
+}
+
+.menu li {
+    display: inline;
+    margin: 5px;
+    
+}
+
+/* Цвет, стиль шрифта в меню, отключение подчёркивания ссылок */
+.menu a {
+    color: darkblue;
+    font-family: "Verdana";
+    text-decoration: none; 
+    font-style: italic;
+}
+
+/* изменение цвета ссылок в меню при наведении курсора */
+
+.menu a:hover {
+    color: red;
+   /* font-family: "Arial"; */
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+/* Стиль заголовка h1 */
+#h1cnt {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+/* Стиль для короткого описания туров */
+.short {
+    display: inline-block;
+    height: 240px;
+    width: 60%;
+}
+
+.short ul {
+   margin: 55px 0 0 0; 
+}
+
+.short ul li {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    /* установка изображения в качестве маркеров списка. Использованное изображение подогнано под размер, но имеет недостаток - не имеет прозрачности */
+    /*list-style-image: url(../img/plane_small.png)*/
+    list-style-type: none;
+    /* устанавливаем изображение в качестве маркеров списка через backgroud.
+    Это более выгодный способ, т.к. подогнанное под размер списка изображение не имеет прозрачности, это испортит нам картину если фоновый цвет страницы будет отличен от белого
+    */
+    background: url(../img/plane.png) no-repeat 0px 0;
+    background-size: 20px;
+    padding-left: 30px;
+    margin: 7px 0 0 0;
+}
+.butt:hover {
+    background-color: aquamarine;  
+}
+
+.butt:active {
+    background-color: aqua;
+}
+
+/* Стиль для длинного описания туров */
+.long {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Меняем цвет и шрифт для первых букв каждого абзаца */
+
+.long:first-letter {
+    font-family: "consolas", "Arial";
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Стиль для рамки изображений */
+.imgbrd {
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 2px;
+    margin: 10px;
+    float: left;
+}
+
+/* При наведении мыши на изображение рамка остаётся, но меняет цвет на цвет фона всей страницы */
+.imgbrd:hover {
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px;
+}
+
+/* Стиль для полей ввода */
+input[type="text"] {
+    height: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    font-family: Verdana;
+    font-style: italic;
+    color: darkblue;
+}
+
+/* Стиль для поля ввода сообщения */
+textarea {
+    height: 200px;
+    border: 1px solid black;
+    font-size: 16px;
+    font-family: Verdana;
+    font-style: italic;
+    color: darkblue;
+}
+
+.footer {
+    height: 60px;
+    width: 95%;
+    text-align: right;
+    background-color: azure;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer p{
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.emcl:focus {
+    background-color: gray;
+}
+table {
+    border: 1px solid black;
+    border-spacing: 0px;
+    text-align: center;
+    width: 600px;
+    height: 250px;
+    
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr:nth-child(1) {
+    height: 60px;
+    font-weight: bold;
+}
+
+.countries {
+    width: 350px;
+    height: 270px;
+    display: inline-block;
+    border: 2px solid darkblue;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.countries p {
+    position: absolute;
+    bottom: 15px;
+    left: 150px;
+}
+
+.catalog {
+    height: 700px;
+}
